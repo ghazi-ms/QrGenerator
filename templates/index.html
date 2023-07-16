@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Signup</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link href="./static/style.css" rel="stylesheet" />
+  </head>
+<body>
+    <!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden">
+
+
+  <div class="container px-4 py-lg-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-lg-0 " style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight custColor1" >
+          Fill In The Form <br />
+          <span class="custColor2">To Generate A QR Code</span>
+        </h1>
+
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative" id="secondLayout">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <form  method="post">
+
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control "
+                      id="firstName"
+                      placeholder="Name"
+                      name="firstName"
+                      required
+                      autofocus
+                    />
+                    <label for="floatingInput">First Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control "
+                      id="LastName"
+                      placeholder="Name"
+                      name="LastName"
+                      required
+                    />
+                    <label for="floatingInput">Last Name</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email input -->
+              <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control "
+                  id="email"
+                  placeholder="name@example.com"
+                  title="Please enter an email as follows name@example.com"
+
+                  name="email"
+                  required
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+            </div>
+
+            </div>
+
+              <!-- Phone Number input -->
+              <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="form-floating">
+                <input
+                  type="tel"
+                  class="form-control "
+                  id="phoneNumber"
+                  placeholder="079xxxxxxx"
+                  name="phoneNumber"
+                  pattern="07\d{8}"
+                  title="Please enter the phone number as follows 07XXXXXXXX"
+                  required
+                />
+                <label for="floatingInput">Phone number</label>
+              </div>
+                </div>
+
+            </div>
+
+
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mt-4">
+                Generate QR <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+                    <path d="M2 2h2v2H2V2Z"/>
+                    <path d="M6 0v6H0V0h6ZM5 1H1v4h4V1ZM4 12H2v2h2v-2Z"/>
+                    <path d="M6 10v6H0v-6h6Zm-5 1v4h4v-4H1Zm11-9h2v2h-2V2Z"/>
+                    <path d="M10 0v6h6V0h-6Zm5 1v4h-4V1h4ZM8 1V0h1v2H8v2H7V1h1Zm0 5V4h1v2H8ZM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8H6Zm0 0v1H2V8H1v1H0V7h3v1h3Zm10 1h-1V7h1v2Zm-1 0h-1v2h2v-1h-1V9Zm-4 0h2v1h-1v1h-1V9Zm2 3v-1h-1v1h-1v1H9v1h3v-2h1Zm0 0h3v1h-2v1h-1v-2Zm-4-1v1h1v-2H7v1h2Z"/>
+                    <path d="M7 12h1v3h4v1H7v-4Zm9 2v2h-3v-1h2v-1h1Z"/>
+                  </svg>
+              </button>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-5  position-relative hide " id="Success">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-glass ">
+          <div class="card-body px-4 py-5 px-md-5 mx-auto">
+
+            <div class="container mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                  <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                  <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                </svg>
+            </svg>
+            <p class="col-lg-8  lead ">
+              Data Collected Successfully.
+            </p>
+              <button class="btn btn-primary btn-block mt-4" onClick="window.location.reload();">Submit New Data  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+            </svg>
+
+              </button>
+          </div>
+        </div>
+
+
+
+        </div>
+
+      </div>
+      <div class="col-lg-6 mb-5  position-relative hide " id="invalid">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-glass ">
+          <div class="card-body px-4 py-5 px-md-5 mx-auto">
+
+            <div class="container mx-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="currentColor" class="bi bi-x-octagon" viewBox="0 0 16 16">
+  <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+
+            </svg>
+            <p class="col-lg-8  lead ">
+              Something went wrong please try again !
+            </p>
+              <button class="btn btn-primary btn-block mt-4" onClick="window.location.reload();">Retry  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+            </svg>
+              </button>
+          </div>
+        </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+
+    <script src="{{url_for('static',filename='index.js')}}"></script>
+
+  </body>
+</html>

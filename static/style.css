@@ -9,22 +9,6 @@ input:valid{
 
 }
 
-input[type='email']:invalid{
-  border: solid red thin !important;
-  background-color: #ffcfce;
-}
-input[type='tel']:invalid{
-  border: solid red thin !important;
-  background-color: #ffcfce;
-}
-input[type='email']:invalid{
-  border:solid white thin !important;
-background-color:white;
-}
-input[type='tel']:empty {
-border:solid white thin !important;
-background-color:white;
-}
 .hide{
   display: none!important ;
 }
